@@ -1,0 +1,19 @@
+{
+"version": "0.2.0",
+"configurations": [
+    {
+        "type": "node",
+        "name": "launch",
+        "request": "launch",
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/tsnd",
+        "program": "${file}",
+        "args": [
+            "--transpile-only",
+            "--respawn",
+        ],
+        "skipFiles": [
+            "<node_internals>/**",
+        ],
+    },
+]
+}
