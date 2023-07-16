@@ -1,24 +1,31 @@
 # TypeScript Starter
 
-Minimal TypeScript project template with Jest testing and VS Code debugging.
+Minimal TypeScript project template for quick prototyping.
 
-## Usage
+## Setup
 
 ```bash
 npm install
-npm run dev          # ts-node-dev with auto-restart and transpile-only
-npm run dev:debug    # same but with --inspect on port 4321
-npm test             # jest with ts-jest
 ```
 
-## What's included
+## Scripts
 
-- TypeScript 4.8 with ts-node-dev for fast reload
-- Jest 29 with ts-jest for TypeScript test support
-- VS Code launch config (`launch.json`) that attaches to the debug port
-- Entry point at `src/index.ts`, tests in `__tests__/`
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start with auto-restart on file changes |
+| `npm run dev:debug` | Same with debugger on port 4321 |
+| `npm test` | Run Jest tests |
 
-## Dependencies
+## Structure
 
-- `typescript`, `ts-node-dev` - development runtime
-- `jest`, `ts-jest`, `@types/jest` - testing
+```
+src/index.ts          entry point
+__tests__/index.js    test example
+.vscode/launch.json   VS Code debug config (attach to ts-node-dev)
+```
+
+## Stack
+
+- TypeScript 4.8
+- ts-node-dev (fast transpile-only reload)
+- Jest 29 + ts-jest
